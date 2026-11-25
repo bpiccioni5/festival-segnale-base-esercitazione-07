@@ -331,3 +331,49 @@ button:focus {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Sezione meteo in Info e luoghi. */
+.weather-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.weather-grid[hidden] {
+  display: none;
+}
+
+.weather-item {
+  padding: 1.25rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.weather-label {
+  margin: 0 0 0.5rem;
+  color: #46564b;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.weather-value {
+  margin: 0;
+  font-family: var(--font-titoli);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.weather-source {
+  margin-top: 1rem;
+  color: #46564b;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .weather-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
